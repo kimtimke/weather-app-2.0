@@ -10,7 +10,7 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -19,9 +19,9 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1>Windhoek</h1>
+            <h1 id="city">Windhoek</h1>
             <ul>
-              <li>Friday 17:00</li>
+              <li id="time">Friday 17:00</li>
               <li>Cloudy</li>
             </ul>
           </div>
@@ -34,20 +34,39 @@
                   id="icon"
                   class="float-left"
                 />
-                <div class="float-left">
-                  <strong id="temperature">16</strong>
-                  <span class="units">°C | °F </span>
+                <div id="temperture">
+                  <strong id="tempValue">16</strong>
+                  <span class="units">
+                    <a href="#" id="celsius-link">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a>
+                  </span>
                 </div>
               </div>
             </div>
             <div class="col-6">
               <ul>
-                <li>Percipitation:</li>
-                <li>Wind speed:</li>
-                <li>Humidity:</li>
+                <li id="precipitation">Percipitation:</li>
+                <li id="wind">Wind speed:</li>
+                <li id="humidity">Humidity:</li>
               </ul>
             </div>
           </div>
+          <form class="search-form" id="search-form">
+            <input
+              type="search"
+              id="city-input"
+              placeholder="Enter city here"
+              autofocus
+              class="form-control"
+            />
+
+            <button id="city-button" type="button" class="btn btn-primary">
+              Search
+            </button>
+            <button id="current-button" type="button" class="btn btn-success">
+              Current
+            </button>
+          </form>
         </div>
         <small>
           <a href="https://github.com/kimtimke/weather-app-2.0" target="_blank"
