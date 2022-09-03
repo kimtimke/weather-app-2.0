@@ -10,6 +10,10 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/8804418e8c.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <link rel="stylesheet" href="src/style.css" />
@@ -21,6 +25,7 @@
         <div class="weather-app">
           <div class="overview">
             <h1 id="city"></h1>
+
             <ul>
               <li>Last updated: <span id="date"></span></li>
               <li id="description"></li>
@@ -58,8 +63,14 @@
             </div>
             <div class="col-6">
               <ul>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> km/h</li>
+                <li>
+                  <i class="fa-solid fa-droplet"></i> Humidity:
+                  <span id="humidity"></span>%
+                </li>
+                <li>
+                  <i class="fa-solid fa-wind"></i> Wind:
+                  <span id="wind"></span> km/h
+                </li>
               </ul>
             </div>
           </div>
