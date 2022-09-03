@@ -33,6 +33,12 @@ li {
 li:first-letter {
   text-transform: capitalize;
 }
+footer {
+  text-align: center;
+  display: block;
+  margin-top: 0 auto;
+  max-width: 1050px;
+}
 
 .weather-app-wrapper {
   max-width: 600px;
@@ -86,7 +92,7 @@ li:first-letter {
   margin-top: 20px;
   text-align: center;
   color: #000;
-  border: 1px solid #dadde1;
+  border: 1px solid #42699b;
   border-radius: 5px;
   padding-top: 15px;
 }
