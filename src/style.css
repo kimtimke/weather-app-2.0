@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-  color: #878787;
+  color: rgb(28, 20, 85);
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
@@ -24,7 +24,7 @@ li {
   margin: 0;
   padding: 0;
 
-  color: #625f59;
+  color: rgb(72, 72, 74);
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
@@ -46,7 +46,7 @@ footer {
   background: linear-gradient(
     359.3deg,
     rgb(196, 214, 252) 1%,
-    rgba(187, 187, 187, 0) 70.9%
+    rgba(38, 38, 213, 0) 70.9%
   );
 }
 
@@ -92,7 +92,7 @@ footer {
   margin-top: 20px;
   text-align: center;
   color: #000;
-  border: 1px solid #42699b;
+  border: 1px solid #5c85bb;
   border-radius: 5px;
   padding-top: 15px;
 }
